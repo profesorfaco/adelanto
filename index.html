@@ -19,8 +19,8 @@
                     //vean los datos en la consola
                     console.log(datos);
                     //ahora armemos algo con cada dato
-                    datos.forEach((d) => {
-                        document.querySelector("#aqui").innerHTML += '<p><a href="single.html?fila=0">Una película</a></p>'
+                    datos.forEach((d, n) => {
+                        document.querySelector("#aqui").innerHTML += '<p><a href="single.html?fila='+ n +'">' + d.title + '</a></p>'
                     });
                 },
             });
